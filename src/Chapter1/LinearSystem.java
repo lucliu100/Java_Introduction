@@ -10,5 +10,6 @@ public class LinearSystem {
         double y = ((A * 5.9) - (44.5 * C))/((A * D) - (B * C));
         System.out.println("x: " + x);
         System.out.println("y: " + y);
+
     }
 }
