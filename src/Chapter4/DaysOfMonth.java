@@ -11,31 +11,31 @@ public class DaysOfMonth {
         System.out.println("Enter a month: ");
         String month = input.next();
         int days = 0;
-        if (Objects.equals(month, "Jan") || Objects.equals(month, "January")) {
+        if (Objects.equals(month, "Jan")) {
             days = 31;
-        } else if ((Objects.equals(month, "Feb") || Objects.equals(month, "February")) && (year % 4 == 0)) {
+        } else if ((Objects.equals(month, "Feb") && (year % 4 == 0))) {
             days = 29;
-        } else if ((Objects.equals(month, "Feb") || Objects.equals(month, "February")) && (year % 4 != 0)) {
+        } else if ((Objects.equals(month, "Feb") && (year % 4 != 0)) ){
             days = 28;
-        } else if (Objects.equals(month, "Mar") || Objects.equals(month, "March")) {
+        } else if (Objects.equals(month, "Mar")) {
             days = 31;
-        } else if (Objects.equals(month, "Apr") || Objects.equals(month, "April")) {
+        } else if (Objects.equals(month, "Apr")) {
             days = 30;
         } else if (Objects.equals(month, "May")) {
             days = 31;
-        } else if (Objects.equals(month, "June")) {
+        } else if (Objects.equals(month, "Jun")) {
             days = 30;
-        } else if (Objects.equals(month, "July")) {
+        } else if (Objects.equals(month, "Jul")) {
             days = 31;
-        } else if (Objects.equals(month, "Aug") || Objects.equals(month, "August")) {
+        } else if (Objects.equals(month, "Aug")) {
             days = 31;
-        } else if (Objects.equals(month, "Sep") || Objects.equals(month, "September")) {
+        } else if (Objects.equals(month, "Sep")) {
             days = 30;
-        } else if (Objects.equals(month, "Oct") || Objects.equals(month, "October")) {
+        } else if (Objects.equals(month, "Oct")) {
             days = 31;
-        } else if (Objects.equals(month, "Nov") || Objects.equals(month, "November")) {
+        } else if (Objects.equals(month, "Nov")) {
             days = 30;
-        } else if (Objects.equals(month, "Dec") || Objects.equals(month, "December")){
+        } else if (Objects.equals(month, "Dec")){
             days = 31;
         }
 
