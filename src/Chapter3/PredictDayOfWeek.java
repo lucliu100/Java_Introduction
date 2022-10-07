@@ -11,13 +11,10 @@ public class PredictDayOfWeek {
         int month = input.nextInt();
         System.out.println("Enter the day of the month (1-31): ");
         int dayOfMonth = input.nextInt();
-        if (month == 1){
-            month = 13;
-            year = year - 1;
-        }
-        if (month == 2){
-            month = 14;
-            year = year - 1;
+        if (month <= 2){
+            month += 12;
+            year --;
+
         }
         int century = (year / 100);
         int yearOfCentury = year % 100;
