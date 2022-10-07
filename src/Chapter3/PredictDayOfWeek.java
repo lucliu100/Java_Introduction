@@ -19,7 +19,7 @@ public class PredictDayOfWeek {
             month = 14;
             year = year - 1;
         }
-        int century = (year / 100) + 1;
+        int century = (year / 100);
         int yearOfCentury = year % 100;
 
 
